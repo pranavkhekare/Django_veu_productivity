@@ -16,10 +16,10 @@
 ### Version 1.1
 1. Build on the previous version to add custom user logging with UserManager
 1. Addded auth
-  * Login screen suing email
+    * Login screen using email
 1. Provided features for filtering the created user on admin screen
 1. Created User profile to add additional features for each created user
-  * Used OnetoOne to link User profile model with User model created before.
+    * Used OnetoOne to link User profile model with User model created before.
   
   
   
