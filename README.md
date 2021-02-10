@@ -1,1 +1,1 @@
-**Productivity tool build on Django and Veu.JS**
+*Productivity tool build on Django and Veu.JS*
