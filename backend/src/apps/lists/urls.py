@@ -6,7 +6,7 @@ router = routers.SimpleRouter()
 router.register(r'', List_detail_view)
 
 items_router = routers.NestedSimpleRouter(router, r'', lookup='list')
-items_router.register(r'items', List_item_detail_view, basename='list-items')
+items_router.register(r'', List_item_detail_view, basename='items')
 
 urlpatterns = [
     path('', include(router.urls)),
