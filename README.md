@@ -20,6 +20,14 @@
 1. Provided features for filtering the created user on admin screen
 1. Created User profile to add additional features for each created user
     * Used OnetoOne to link User profile model with User model created before.
+    
+### Version 1.2
+1. Cleaned up code by creating apps directory to store all the created apps
+1. Created Lists app and linked it to the user app
+1. Created Lists Item app and linked it to the Lists app
+1. Connected Task, Lists app using the Primary key Foreign key connection (One to One) with the User model
+1. Installed nested URL app `pip install drf_nested_routers` to provide nested URL feature in Django rest framework (used for Lists & List items app)
+1. Changed Sqlite DB to Postgres DB
   
   
   
@@ -28,3 +36,5 @@
 * Tasks
 * Users
 * User_profiles
+* Lists
+* List_items
