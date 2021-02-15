@@ -8,13 +8,13 @@ router = routers.SimpleRouter()
 router.register(r'', User_detail_view, basename='users')
 
 task_router = routers.NestedSimpleRouter(router, r'', lookup='users')
-task_router.register(r'', Task_detail_view, basename='tasks')
+task_router.register(r'tasks', Task_detail_view, basename='tasks')
 
 list_router = routers.NestedSimpleRouter(router, r'', lookup='users')
-list_router.register(r'', List_detail_view, basename='lists')
+list_router.register(r'lists', List_detail_view, basename='lists')
 
-items_router = routers.NestedSimpleRouter(list_router, r'', lookup='lists')
-items_router.register(r'', List_item_detail_view, basename='items')
+items_router = routers.NestedSimpleRouter(list_router, r'lists', lookup='lists')
+items_router.register(r'items', List_item_detail_view, basename='items')
 
 urlpatterns = [
     path('', include(router.urls)),
