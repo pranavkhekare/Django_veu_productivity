@@ -28,11 +28,16 @@
 1. Connected Task, Lists app using the Primary key Foreign key connection (One to One) with the User model
 1. Installed nested URL app `pip install drf_nested_routers` to provide nested URL feature in Django rest framework (used for Lists & List items app)
 1. Changed Sqlite DB to Postgres DB
+
+### Version 1.3
+1. Added Nuxt.JS frontend (Nuxt.JS based on Vue.JS) with Veutify material design language.
+1. Added tasks page and tasks store in vuex to input tasks from users.
+1. Added capabiltity to enter tasks, delete, and edit tasks.
   
   
   
 
-## Tables (DB: sqlite3)
+## Tables (DB: PostgreSQL)
 * Tasks
 * Users
 * User_profiles
