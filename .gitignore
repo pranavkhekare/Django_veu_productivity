@@ -148,6 +148,7 @@ dmypy.json
 
 # profiling data
 .prof
+.idea
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
